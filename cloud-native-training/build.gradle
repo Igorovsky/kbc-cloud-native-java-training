@@ -13,9 +13,11 @@ java {
 
 repositories {
     mavenCentral()
+    
 }
 
 dependencies {
+
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.projectlombok:lombok:1.18.22'
     compileOnly group: 'org.projectlombok', name: 'lombok'

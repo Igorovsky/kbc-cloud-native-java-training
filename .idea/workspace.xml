@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7b54632-4038-410c-a574-402924a3fad3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/src/main/java/com/example/cloudnativetraining/CloudNativeTrainingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/src/main/java/com/example/cloudnativetraining/CloudNativeTrainingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-native-training/src/test/java/com/example/cloudnativetraining/CloudNativeTrainingApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-native-training/src/test/java/com/example/cloudnativetraining/CloudNativeTrainingApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="a7b54632-4038-410c-a574-402924a3fad3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,9 +13,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2cGvjqbhkFIUcvmnhSX6a5kjeZb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,9 +25,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "cloud-native-training-day-1-clean-try",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/igorr/IdeaProjects/kbc-cloud-native-java-training",
+    "last_opened_file_path": "C:/Users/igorr/IdeaProjects/kbc-cloud-native-java-training/cloud-native-training",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -66,6 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707750867498</updated>
       <workItem from="1707750868561" duration="118000" />
+      <workItem from="1707815478895" duration="257000" />
     </task>
     <servers />
   </component>

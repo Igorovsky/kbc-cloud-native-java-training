@@ -1,1 +1,0 @@
-insert into book values(1, 'Hey Book')

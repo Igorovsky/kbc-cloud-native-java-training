@@ -17,5 +17,6 @@ public class Constants {
     public static String TIME_SECOND_NOT_VALID = "Invalid seconds.";
     public static String TIME_MILLIS_NOT_VALID = "Invalid millis.";
     public static String TIME_OUT_IS_NOT_VALID = "Time out is not valid.";
+    public static float MAX_SPEED_LIMIT = 90F;
 
 }

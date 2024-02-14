@@ -1,0 +1,5 @@
+insert into registration values (1231,'QPP263', '8 0 5 0', '8 7 8 436')
+insert into registration values (22322,'QKU818', '8 0 9 814', '8 7 13 343')
+insert into registration values (4443,'QIX598', '8 0 13 47', '8 7 21 618')
+insert into registration values (224414,'OAP573', '8 0 20 615', '8 8 27 102')
+insert into registration values (52232132,'QDY352', '8 0 27 460', '8 7 57 460')

@@ -3,7 +3,6 @@ package com.example.speedmeretrestex.controller.model;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;
 import lombok.Getter;
-import org.antlr.v4.runtime.misc.NotNull;
 
 @Builder
 @Getter

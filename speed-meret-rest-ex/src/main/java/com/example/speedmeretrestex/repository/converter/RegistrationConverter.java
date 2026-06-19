@@ -5,8 +5,6 @@ import com.example.speedmeretrestex.repository.model.FormattedRegistration;
 import com.example.speedmeretrestex.repository.model.Registration;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalTime;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 

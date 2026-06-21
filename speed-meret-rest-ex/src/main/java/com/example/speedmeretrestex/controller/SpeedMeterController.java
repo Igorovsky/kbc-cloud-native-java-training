@@ -16,6 +16,7 @@ import java.util.List;
 import static com.example.speedmeretrestex.constants.Constants.REGISTRATION_INGESTED_RESPONSE_MESSAGE;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/speed-meter")
 @AllArgsConstructor
 public class SpeedMeterController {
@@ -46,6 +47,7 @@ public class SpeedMeterController {
 
         return ResponseEntity.ok(resp);
     }
+
 
     @PostMapping(value = "/registrations/list")
     public ResponseEntity<TrafficStatsResponse> retrieveRegistrationsByTimeInterval(

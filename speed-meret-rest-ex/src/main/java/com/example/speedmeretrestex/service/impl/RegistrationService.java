@@ -83,8 +83,8 @@ public class RegistrationService extends BaseService implements RegistrationServ
 
         List<FormattedRegistration> allRegs = registrationRepository.retrieveAllRegistrations();
 
-        List<FormattedRegistration> allRegsBeforeNine = allRegs.stream().map(
-                        registration -> {
+        List<FormattedRegistration> allRegsBeforeNine = allRegs.stream()
+                .map(registration -> {
                             LocalTime givenTime = LocalTime.of(9, 9, 0 , 0);
                             if(registration.getTimeIn().isBefore(givenTime)) {
                                 return registration;

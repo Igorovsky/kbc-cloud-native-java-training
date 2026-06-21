@@ -14,13 +14,14 @@ N.B. The last section here shows a technical drawing, color coded and explains t
 
 ## JDK 17 - Project and IDE configurations
 
-![Project Settings - JDK 17.png](main/resources/Project%20Settings%20-%20JDK%2017.png)
+![Project Settings - JDK 17.png](src/main/resources/Project%20Settings%20-%20JDK%2017.png)
 
-![Speed meter BE run config.png](main/resources/Speed%20meter%20BE%20run%20config.png)
+![Speed meter BE run config.png](src/main/resources/Speed%20meter%20BE%20run%20config.png)
 
 ## Swagger definition
 At `http://localhost:8080/api/swagger-ui/index.html#/speed-meter-controller`
-![Speed meter BE swagger.png](main/resources/Speed%20meter%20BE%20swagger.png)
+
+![Speed meter BE swagger.png](src/main/resources/Speed%20meter%20BE%20swagger.png)
 
 ## Postman Collection REST API
 
@@ -28,4 +29,7 @@ Postman collection can be imported from src/main/resources/speedmeretrestex.post
 
 ## High Level Architectural drawing
 This microservice's APIs are consumed by the SpeedRegsUI angular frontend. The technical drawing describes the aforementioned integration.
-[Speed Meter High Level Architecture.drawio.html](main/resources/Speed%20Meter%20High%20Level%20Architecture.drawio.html)
+
+[Speed Meter High Level Architecture.drawio.html](src/main/resources/Speed%20Meter%20High%20Level%20Architecture.drawio.html)
+
+![Speed Meter High Level Architecture PIC.jpg](src/main/resources/Speed%20Meter%20High%20Level%20Architecture%20PIC.jpg)

@@ -1,8 +1,9 @@
 package com.example.speedmeretrestex.controller;
 
-import com.example.speedmeretrestex.controller.model.RawRegistration;
+import com.example.speedmeretrestex.controller.model.*;
 import com.example.speedmeretrestex.repository.model.FormattedRegistration;
 import com.example.speedmeretrestex.service.RegistrationServiceI;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import org.junit.jupiter.api.BeforeEach;
@@ -87,10 +88,55 @@ class SpeedMeterControllerTest {
     }
 
     @Test
-    void retrieveAllRegistrationsStats() {
+    void retrieveAllRegistrationsStats() throws Exception {
+
+
+        GeneralTrafficStatsResponse response = GeneralTrafficStatsResponse
+                                                .builder()
+                                                .highestSpeedVehicle(HighestSpeedVehicle
+                                                        .builder()
+                                                        .plate(PLATE_NUM)
+                                                        .avgSpeed(32F)
+                                                        .overtaken(3)
+                                                        .build())
+                                                .percentSpeedingVehicles(30F)
+                                                .totalRegistrations(12)
+                                                .totalRegistrationsBeforeNine(2)
+                                                .build();
+        when(registrationService.retrieveAllRegistrationsStats())
+                .thenReturn(response);
+
+        this.mockMvc
+                .perform(get("/speed-meter/registrations/stats"))
+                .andExpect(status().isOk());
+
     }
 
     @Test
-    void retrieveRegistrationsByTimeInterval() {
+    void retrieveRegistrationsByTimeInterval() throws Exception {
+
+        RegistrationsListAtTime request = RegistrationsListAtTime
+                                            .builder()
+                                            .hour(8)
+                                            .minute(20)
+                                            .build();
+
+        TrafficStatsResponse response = TrafficStatsResponse
+                .builder()
+                .totalRegistrations(20)
+                .intensity(12F)
+                .build();
+
+        when(registrationService.retrieveRegistrationsStatsAt(request))
+                .thenReturn(response);
+
+        ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
+        String jsonInput = ow.writeValueAsString(request);
+
+        this.mockMvc
+                .perform(post("/speed-meter/registrations/list")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(jsonInput))
+                .andExpect(status().isOk());
     }
 }

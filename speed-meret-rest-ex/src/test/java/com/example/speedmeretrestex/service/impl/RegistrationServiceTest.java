@@ -1,8 +1,10 @@
 package com.example.speedmeretrestex.service.impl;
 
 
+import com.example.speedmeretrestex.controller.model.GeneralTrafficStatsResponse;
 import com.example.speedmeretrestex.controller.model.RawRegistration;
 import com.example.speedmeretrestex.controller.model.RegistrationsListAtTime;
+import com.example.speedmeretrestex.controller.model.TrafficStatsResponse;
 import com.example.speedmeretrestex.exceptions.BadRequestException;
 import com.example.speedmeretrestex.repository.impl.RegistrationRepository;
 import com.example.speedmeretrestex.repository.model.FormattedRegistration;
@@ -180,6 +182,45 @@ public class RegistrationServiceTest {
 
         assertEquals(output.size(), 0);
 
+    }
+
+    @Test
+    void retrieveRegistrationsStatsAt_one_registration() {
+
+        FormattedRegistration formattedRegOne = formattedRegAtEight;
+        FormattedRegistration formattedRegTwo = formattedRegAtTen;
+
+        List<FormattedRegistration>  allRegsResponse = List.of(formattedRegOne, formattedRegTwo);
+
+        RegistrationsListAtTime inputTime = inputTimeAtNine;
+
+        when(registrationRepository.retrieveAllRegistrations()).thenReturn(allRegsResponse);
+
+        TrafficStatsResponse output = registrationServiceTest.retrieveRegistrationsStatsAt(inputTime);
+
+        assertNotNull(output);
+        assertEquals(output.getTotalRegistrations(),1);
+        assertEquals(output.getIntensity(),0.1F);
+    }
+
+    @Test
+    void retrieveAllRegistrationsStats_ok() {
+
+        // prepare
+        FormattedRegistration formattedRegOne = formattedRegAtEight;
+        FormattedRegistration formattedRegTwo = formattedRegAtTen;
+
+        List<FormattedRegistration>  allRegsResponse = List.of(formattedRegOne, formattedRegTwo);
+
+        when(registrationRepository.retrieveAllRegistrations()).thenReturn(allRegsResponse);
+
+        // act
+        GeneralTrafficStatsResponse output = registrationServiceTest.retrieveAllRegistrationsStats();
+
+        // expect
+        assertNotNull(output);
+        assertEquals(output.getTotalRegistrationsBeforeNine(), 1);
+        assertEquals(output.getHighestSpeedVehicle().getPlate(), formattedRegOne.getPlateNumber());
     }
 
 }

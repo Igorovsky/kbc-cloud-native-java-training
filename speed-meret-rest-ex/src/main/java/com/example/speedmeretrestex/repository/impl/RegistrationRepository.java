@@ -8,7 +8,6 @@ import com.example.speedmeretrestex.repository.model.Registration;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
-import java.util.Collection;
 import java.util.List;
 
 @Repository
